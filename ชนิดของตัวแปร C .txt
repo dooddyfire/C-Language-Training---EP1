@@ -1,0 +1,142 @@
+ชนิดของตัวแปร C 
+ 
+1. String   "dsasadmklsadkladsmkml"    ตัวอักษรมากกว่า 1 ตัว
+
+char x[20] = "apple"; String จำกัดแค่ 20 ตัวอักษร
+char x[] = "apple";  String ไม่จำกัดความาว
+
+ 
+2. Char     ตัวอักษรตัวเดียว   
+char a = 'a';
+
+
+3. integer (int)
+
+int x = 5;                          x[] = {5,6};              x[0] = 5   x[1] = 6  array
+printf("%d",x)    
+
+4. float   ทศนิยม
+
+float a = 2.34;
+printf("%.1f",a);
+
+5. bool   true,false
+bool x = false;
+-------------------------------
+
+%d = decimal   คือ สำหรับแทน int 
+%s = string  คือ แทน string 
+%f = float คือ แทน ทศนิยม float         %.2f กำหนดให้ทศนิยมแทน 2 ตำแหน่ง
+%c = char  คือ แทน charatcer ตัวอักษร 1 ตัว
+
+
+---------------------------------
+
+int / int = int 
+
+
+#include <stdio.h>
+
+int main() {
+  int x = 10;
+  
+  //x = x + 5; 
+  x += 5;
+  
+  // x = x - 5 
+  // x -= 5 
+  
+  printf("x = %d\n",x);
+  printf("========================\n");
+  
+  x++; // x = x + 1
+  // x++
+  printf("x = %d\n",x);
+  
+  x--;
+  printf("x = %d\n",x);
+  
+  
+  return 0;
+}
+
+------------------------
+
+วิธีการจำตรรกศาสตร์
+
+1. AND    &&  ถ้ามี F หลุดมาตัวนึงเป็น F
+
+True ไป and กับ False จะได้ False 
+True ไป and กับ True ได้ True
+
+
+T & T & T & F = False 
+
+2. OR  ||
+ถ้ามี T หลุดมาตัวนึงเป็น T 
+
+F or F or F or F or T   ==  T 
+
+โจทย์ ((T && F && T ) && F) || T 
+
+
+((T && F && T ) && F) || T 
+
+
+(F && F) || T 
+
+F || T 
+
+T 
+------------------------------------------------------
+3. ถ้า แล้ว ->
+
+T -> F  ได้ F 
+นอกนั้น T 
+
+
+F -> T == T 
+F -> F == T 
+T -> T == T
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
